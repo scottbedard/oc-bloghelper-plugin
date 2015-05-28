@@ -27,3 +27,12 @@
 .md-layout.fourth {
     width: 25%;
 }
+
+.md-layout div {
+    padding: 5px;
+}
+
+.md-layout img {
+    height: auto;
+    width: 100%;
+}
