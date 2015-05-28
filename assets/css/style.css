@@ -10,3 +10,20 @@
     height: 100%;
     width: 100%;
 }
+
+.md-layout {
+    display: inline-block;
+    float: left;
+}
+
+.md-layout.half {
+    width: 50%;
+}
+
+.md-layout.third {
+    width: 33.333333%;
+}
+
+.md-layout.fourth {
+    width: 25%;
+}
