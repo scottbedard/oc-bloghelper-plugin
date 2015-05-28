@@ -66,7 +66,7 @@ class Plugin extends PluginBase
             // [fourth]...[/fourth] or [quarter]...[/quarter]
             $data->text = preg_replace(
                 '/\[(fourth|quarter)\]([\S\s]+?)\[\/(fourth|quarter)\]/im',
-                '<div class="md-layout fourth">$1</div>',
+                '<div class="md-layout fourth">$2</div>',
                 $data->text
             );
         });
