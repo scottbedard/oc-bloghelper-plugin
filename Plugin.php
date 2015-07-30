@@ -42,6 +42,13 @@ class Plugin extends PluginBase
                 $data->text
             );
 
+            // [vimeo]...[/vimeo]
+            $data->text = preg_replace(
+                '/\[vimeo\](.{1,11})\[\/vimeo\]/im',
+                '<div class="video-wrapper"><iframe src="//player.vimeo.com/video/$1" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>',
+                $data->text
+            );
+
             // [img]...[/img]
             $data->text = preg_replace(
                 '/\[img\]([\S\s]+?)\[\/img\]/im',
